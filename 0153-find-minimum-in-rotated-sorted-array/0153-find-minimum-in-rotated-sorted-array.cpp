@@ -6,8 +6,6 @@ public:
         while (low <= high)
         {
             int mid = (low + high) / 2;
-            if (mid == 0 || arr[mid] < arr[mid - 1])
-                minVal = min(minVal, arr[mid]);
             if (arr[low] <= arr[mid]){
                  // left sorted
                  minVal = min(minVal, arr[low]);
