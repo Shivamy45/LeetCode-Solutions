@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0907-koko-eating-bananas](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-koko-eating-bananas) |
 ## Two Pointers
 |  |
 | ------- |
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
+| [0907-koko-eating-bananas](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-koko-eating-bananas) |
 ## Divide and Conquer
 |  |
 | ------- |
