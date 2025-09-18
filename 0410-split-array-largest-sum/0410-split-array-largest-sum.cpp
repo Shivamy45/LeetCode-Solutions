@@ -1,27 +1,30 @@
 class Solution {
 public:
-    int noOfSplit(vector<int> &nums,  int maxSum){
-        int currSum = 0, splits = 1;
-        for(int num : nums){
-            if(currSum + num > maxSum){
-                splits++;
-                currSum = 0;
+    int search(int x, vector<int>& ans) {
+        int sum=0; int t=1;
+        for(int j=0; j<ans.size(); j++) {
+            if(sum + ans[j] <= x) sum += ans[j];
+            else {
+                t++;
+                sum=ans[j];
             }
-            currSum += num;
         }
-        return splits;
+        return t;
     }
     int splitArray(vector<int>& nums, int k) {
-        int low = INT_MIN, high = 0;
-        for(int num : nums){
-            low = max(low, num);
-            high += num;
+        if(k > nums.size()) return -1;
+
+        int s=0; int e=0;
+        for(int i=0; i<nums.size(); i++) {
+            if(s < nums[i]) s = nums[i];
+            e += nums[i];
         }
-        while(low <= high){
-            int mid = (low + high) / 2;
-            if(noOfSplit(nums, mid) > k) low = mid + 1;
-            else high = mid - 1;
+
+        while(s <= e) {
+            int mid = s+(e-s)/2;
+            if(search(mid,nums) <= k) e = mid-1;
+            else s = mid+1;
         }
-        return low;
+        return s;
     }
 };
