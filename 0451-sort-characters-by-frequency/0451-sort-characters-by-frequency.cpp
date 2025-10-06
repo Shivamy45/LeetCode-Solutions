@@ -1,10 +1,12 @@
 class Solution {
 public:
     string frequencySort(string s) {
-        map<char, int> mpp;
-        for (char c : s)
-            mpp[c]++;
-        vector<pair<char, int>> vec(mpp.begin(), mpp.end());
+        vector<pair<char, int>> vec(256);
+
+        for (auto& c : s) {
+            int fr = vec[c].second;
+            vec[c] = {c, fr + 1};
+        }
 
         sort(vec.begin(), vec.end(),
              [](auto& a, auto& b) { return a.second > b.second; });
