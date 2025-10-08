@@ -5,21 +5,14 @@ public:
         string temp = "", res = "";
         bool first = true;
         int i = 0;
-        while(i < n && s[i] == ' ') i++;
         while (i < n) {
-            if (s[i] == ' ') {
-                if (temp.length() != 0){
-                    res = (first) ? temp + res : temp + " " + res;
-                    first = false;
-                }
-                temp = "";
-            } else {
-                temp += s[i];
-            }
-            i++;
+            temp = "";
+            while(i < n && s[i] == ' ') i++;
+            if(i >= n) break;
+            while(i < n && s[i] != ' ') temp += s[i++];
+            res = temp + " " + res;
         }
-        if(temp.length() != 0)
-            res = (first) ? temp + res : temp + " " + res;
-        return res;
+        int m = res.length();
+        return res.substr(0, m - 1);
     }
 };
