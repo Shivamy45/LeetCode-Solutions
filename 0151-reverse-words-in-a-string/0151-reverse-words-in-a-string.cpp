@@ -5,6 +5,7 @@ public:
         string temp = "", res = "";
         bool first = true;
         int i = 0;
+        while(i < n && s[i] == ' ') i++;
         while (i < n) {
             if (s[i] == ' ') {
                 if (temp.length() != 0){
