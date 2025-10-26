@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1646-kth-missing-positive-number) |
 | [2047-find-a-peak-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2047-find-a-peak-element-ii) |
+| [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 ## Two Pointers
 |  |
 | ------- |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1890-sum-of-beauty-of-all-substrings) |
+| [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -182,4 +184,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
+## Design
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
+## Simulation
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 <!---LeetCode Topics End-->
