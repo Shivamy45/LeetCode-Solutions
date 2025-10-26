@@ -16,10 +16,7 @@ public:
         ListNode* temp = head;
         while (temp != nullptr && temp->next != nullptr) {
             if (temp->val == temp->next->val) {
-                ListNode* tempNode = temp->next;
-                temp->next = tempNode->next;
-                tempNode->next = nullptr;
-                delete tempNode;
+                temp->next = temp->next->next;
             } else {
                 temp = temp->next;
             }
