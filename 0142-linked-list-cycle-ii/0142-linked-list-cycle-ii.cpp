@@ -15,7 +15,7 @@ public:
             if (mpp.find(temp) != mpp.end())
                 return temp;
             mpp[temp] = 1;
-            temp = temp->next;
+            temp= temp->next;
         }
         return nullptr;
     }
