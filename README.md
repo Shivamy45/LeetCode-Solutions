@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2047-find-a-peak-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2047-find-a-peak-element-ii) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Two Pointers
 |  |
 | ------- |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
+| [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Matrix
 |  |
 | ------- |
@@ -202,6 +204,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
+| [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Tree
 |  |
 | ------- |
