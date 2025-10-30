@@ -24,18 +24,18 @@ public:
         return prev;
     }
     bool isPalindrome(ListNode* head) {
-        ListNode *slow, *fast, *temp;
-        slow = fast = temp = head;
-        while (fast && fast->next && fast->next->next) {
+        ListNode *slow, *fast, *first;
+        slow = fast = first = head;
+        while (fast->next && fast->next->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
-        slow->next = reverseList(slow->next);
-        slow = slow->next;
+        slow = reverseList(slow->next);
         while (slow) {
-            if (temp->val != slow->val)
+            if (first->val != slow->val) {
                 return false;
-            temp = temp->next;
+            }
+            first = first->next;
             slow = slow->next;
         }
         return true;
