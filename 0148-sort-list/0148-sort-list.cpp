@@ -48,9 +48,9 @@ public:
             return head;
 
         ListNode* middle = helperMiddle(head);
-        ListNode *left = head, *right = middle->next;
+        ListNode *right = middle->next;
         middle->next = nullptr;
-        left = sortList(left);
+        ListNode *left = sortList(head);
         right = sortList(right);
         return helperMergeList(left, right);
     }
