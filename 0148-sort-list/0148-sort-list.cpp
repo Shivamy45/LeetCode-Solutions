@@ -22,11 +22,11 @@ public:
                 temp2 = temp2->next;
             }
             temp = temp->next;
-            if(temp1 == nullptr){
-                temp->next = temp2;
-            } else if(temp2 == nullptr){
-                temp->next = temp1;
-            }
+        }
+        if (temp1 == nullptr) {
+            temp->next = temp2;
+        } else {
+            temp->next = temp1;
         }
         return dummyHead->next;
     }
