@@ -10,41 +10,31 @@
  */
 class Solution {
 public:
-    ListNode* helperMergeList(ListNode* head1, ListNode* head2) {
+    ListNode* helperMergeList(ListNode* temp1, ListNode* temp2) {
         ListNode* dummyHead = new ListNode(-1);
         ListNode* temp = dummyHead;
-        ListNode *temp1 = head1, *temp2 = head2;
-        int value;
         while (temp1 != nullptr && temp2 != nullptr) {
             if (temp1->val < temp2->val) {
-                value = temp1->val;
+                temp->next = temp1;
                 temp1 = temp1->next;
             } else {
-                value = temp2->val;
+                temp->next = temp2;
                 temp2 = temp2->next;
             }
-            ListNode* newNode = new ListNode(value);
-            temp->next = newNode;
-            temp = newNode;
-        }
-        while (temp1 != nullptr) {
-            value = temp1->val;
-            temp1 = temp1->next;
-            ListNode* newNode = new ListNode(value);
-            temp->next = newNode;
-            temp = newNode;
-        }
-        while (temp2 != nullptr) {
-            value = temp2->val;
-            temp2 = temp2->next;
-            ListNode* newNode = new ListNode(value);
-            temp->next = newNode;
-            temp = newNode;
+            temp = temp->next;
+            if(temp1 == nullptr){
+                temp->next = temp2;
+            } else if(temp2 == nullptr){
+                temp->next = temp1;
+            }
         }
         return dummyHead->next;
     }
 
     ListNode* helperMiddle(ListNode* head) {
+        if (head == nullptr || head->next == nullptr) {
+            return head;
+        }
         ListNode *slow = head, *fast = head->next;
         while (fast && fast->next) {
             slow = slow->next;
