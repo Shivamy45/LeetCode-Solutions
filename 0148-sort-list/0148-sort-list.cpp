@@ -14,7 +14,7 @@ public:
         ListNode* dummyHead = new ListNode(-1);
         ListNode* temp = dummyHead;
         while (temp1 != nullptr && temp2 != nullptr) {
-            if (temp1->val < temp2->val) {
+            if (temp1->val <= temp2->val) {
                 temp->next = temp1;
                 temp1 = temp1->next;
             } else {
