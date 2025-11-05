@@ -18,6 +18,12 @@ public:
     BrowserHistory(string homepage) { current = new Node(homepage); }
 
     void visit(string url) {
+        Node *temp = current->next;
+        while(temp){
+            Node *nextNode = temp->next;
+            delete temp;
+            temp = nextNode;
+        }
         Node* newNode = new Node(url);
         current->next = newNode;
         newNode->back = current;
