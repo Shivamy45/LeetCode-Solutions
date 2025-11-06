@@ -2,23 +2,21 @@ class Solution {
 public:
     const long long MOD = 1000000007;
 
-    long long modPow(long long x, long long n) {
-        long long res = 1;
-        while (n > 0) {
-            if (n & 1)
-                res = (res * x) % MOD;
-            x = (x * x) % MOD;
-            n >>= 1;
-        }
-        return res;
+    long long helperCountGoodNumbers(long long x, long long n) {
+        if (n == 0)
+            return 1;
+        if (n % 2)
+            return (x % MOD) * (helperCountGoodNumbers(x, n - 1) % MOD);
+        else
+            return helperCountGoodNumbers((x % MOD) * (x % MOD), n / 2) % MOD;
     }
 
     int countGoodNumbers(long long n) {
         long long evenPos = (n + 1) / 2;
         long long oddPos = n / 2;
 
-        long long a = modPow(5, evenPos);
-        long long b = modPow(4, oddPos);
+        long long a = helperCountGoodNumbers(5, evenPos) % MOD;
+        long long b = helperCountGoodNumbers(4, oddPos) % MOD;
 
         return (a * b) % MOD;
     }
