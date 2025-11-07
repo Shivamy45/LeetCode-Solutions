@@ -1,17 +1,28 @@
 class Solution {
 public:
-    void backtrack(string curr, int open, int close, int n, vector<string>& res) {
-    if (curr.length() == 2 * n) {
-        res.push_back(curr);
-        return;
-    }
-    if (open < n) backtrack(curr + '(', open + 1, close, n, res);
-    if (close < open) backtrack(curr + ')', open, close + 1, n, res);
-}
+    void helperGenerateParenthesis(int n, vector<string>& res, string& temp,
+                                   int open, int close) {
+        if (temp.length() == 2 * n) {
+            res.push_back(temp);
+            return;
+        }
+        if (close < open) {
+            temp.push_back(')');
+            helperGenerateParenthesis(n, res, temp, open, close + 1);
+            temp.pop_back();
+        }
+        if (open < n) {
 
-vector<string> generateParenthesis(int n) {
-    vector<string> res;
-    backtrack("", 0, 0, n, res);
-    return res;
-}
+            temp.push_back('(');
+            helperGenerateParenthesis(n, res, temp, open + 1, close);
+            temp.pop_back();
+        }
+    }
+
+    vector<string> generateParenthesis(int n) {
+        vector<string> res;
+        string temp;
+        helperGenerateParenthesis(n, res, temp, 0, 0);
+        return res;
+    }
 };
