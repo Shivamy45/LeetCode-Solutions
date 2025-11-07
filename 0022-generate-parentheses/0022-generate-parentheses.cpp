@@ -1,21 +1,24 @@
 class Solution {
 public:
     void helperGenerateParenthesis(int n, vector<string>& res, string& temp,
-                                   int lcount, int rcount) {
-        if (lcount + rcount > 2 * n)
+                                   int open, int close) {
+        if (open + close > 2 * n)
             return;
-        if (lcount == rcount && lcount + rcount == 2 * n) {
+        if (open == close && open + close == 2 * n) {
             res.push_back(temp);
             return;
         }
-        if (rcount < lcount) {
+        if (close < open) {
             temp.push_back(')');
-            helperGenerateParenthesis(n, res, temp, lcount, rcount + 1);
+            helperGenerateParenthesis(n, res, temp, open, close + 1);
             temp.pop_back();
         }
-        temp.push_back('(');
-        helperGenerateParenthesis(n, res, temp, lcount + 1, rcount);
-        temp.pop_back();
+        if (open < n) {
+
+            temp.push_back('(');
+            helperGenerateParenthesis(n, res, temp, open + 1, close);
+            temp.pop_back();
+        }
     }
     vector<string> generateParenthesis(int n) {
         vector<string> res;
