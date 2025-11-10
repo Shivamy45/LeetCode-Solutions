@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool helperExist(vector<vector<char>>& board, string word, int i, int j,
+    bool helperExist(vector<vector<char>>& board, string &word, int i, int j,
                      int idx) {
         if (i >= board.size() || i < 0 || j >= board[0].size() || j < 0)
             return false;
