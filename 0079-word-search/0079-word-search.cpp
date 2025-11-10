@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool helperExist(vector<vector<char>>& board, string word, int i, int j,
+    bool helperExist(vector<vector<char>>& board, string &word, int i, int j,
                      int idx, int n, int m) {
         if (idx == word.length())
             return true;
