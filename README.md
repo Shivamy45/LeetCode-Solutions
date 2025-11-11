@@ -109,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0022-generate-parentheses) |
 | [0070-climbing-stairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
+| [0131-palindrome-partitioning](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0152-maximum-product-subarray) |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 ## Greedy
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0022-generate-parentheses) |
 | [0058-length-of-last-word](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0058-length-of-last-word) |
 | [0079-word-search](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0079-word-search) |
+| [0131-palindrome-partitioning](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 | [0151-reverse-words-in-a-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0242-valid-anagram) |
@@ -282,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0079-word-search](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+| [0131-palindrome-partitioning](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0216-combination-sum-iii) |
 | [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 ## Bit Manipulation
