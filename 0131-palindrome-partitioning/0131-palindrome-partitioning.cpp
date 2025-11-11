@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void helperPartition(string s, vector<vector<string>>& res,
+    void helperPartition(string &s, vector<vector<string>>& res,
                          vector<string>& temp, int idx,
                          vector<vector<bool>>& isPP) {
         if (idx == s.length()) {
