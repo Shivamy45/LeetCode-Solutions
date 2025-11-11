@@ -1,29 +1,47 @@
 class Solution {
 public:
-    void helperPartition(string& s, vector<vector<string>>& res,
-                         vector<string>& temp, int idx,
-                         vector<vector<bool>>& isPP) {
-        if (idx == s.length()) {
-            res.push_back(temp);
+    bool isPalindrome(string& s, int start, int end) {
+        // Loop while start < end
+        while (start < end) {
+            // If mismatch, not a palindrome
+            if (s[start] != s[end])
+                return false;
+            // Move pointers inward
+            start++;
+            end--;
+        }
+        // All characters matched
+        return true;
+    }
+
+    // Backtracking function to build partitions
+    void backtrack(int index, string& s, vector<string>& path,
+                   vector<vector<string>>& res) {
+        // If index reaches end of string, store current partition
+        if (index == s.length()) {
+            res.push_back(path);
             return;
         }
-        for (int i = idx; i < s.length(); i++) {
-            if (isPP[idx][i]) {
-                temp.push_back(s.substr(idx, i - idx + 1));
-                helperPartition(s, res, temp, i + 1, isPP);
-                temp.pop_back();
+
+        // Try all possible substrings
+        for (int i = index; i < s.length(); i++) {
+            // If substring is a palindrome
+            if (isPalindrome(s, index, i)) {
+                // Add substring to current path
+                path.push_back(s.substr(index, i - index + 1));
+                // Recur for remaining string
+                backtrack(i + 1, s, path, res);
+                // Backtrack to try other partitions
+                path.pop_back();
             }
         }
     }
 
+    // Main function to return all palindrome partitions
     vector<vector<string>> partition(string s) {
         vector<vector<string>> res;
-        vector<string> temp;
-        vector<vector<bool>> isPP(s.length(), vector<bool>(s.length(), false));
-        for (int i = s.length() - 1; i >= 0; i--)
-            for (int j = i; j < s.length(); j++)
-                isPP[i][j] = (s[i] == s[j] && (j - i < 2 || isPP[i + 1][j - 1]));
-        helperPartition(s, res, temp, 0, isPP);
+        vector<string> path;
+        backtrack(0, s, path, res);
         return res;
     }
 };
