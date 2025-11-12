@@ -41,11 +41,10 @@ public:
             }
         }
     }
-    vector<vector<string>> solveNQueens(int n)
-{
-    vector<vector<string>> res;
-    vector<string> board(n, string(n, '.'));
-    helperSolveNQueens(res, board, 0, n);
-    return res;
-}
+    vector<vector<string>> solveNQueens(int n) {
+        vector<vector<string>> res;
+        vector<string> board(n, string(n, '.'));
+        helperSolveNQueens(res, board, 0, n);
+        return res;
+    }
 };
