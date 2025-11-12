@@ -1,39 +1,43 @@
 class Solution {
 public:
-    bool isSafe(vector<string>& board) {
-        int n = board.size();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'Q') {
-                    for (int x = i + 1; x < n; x++)
-                        if (board[x][j] == 'Q')
-                            return false;
-                    for (int x = j + 1; x < n; x++)
-                        if (board[i][x] == 'Q')
-                            return false;
-                    for (int x = 1; x + i < n && x + j < n; x++)
-                        if (board[i + x][j + x] == 'Q')
-                            return false;
-                    for (int x = 1; x + i < n && j - x >= 0; x++)
-                        if (board[i + x][j - x] == 'Q')
-                            return false;
-                }
-            }
+    bool isSafe(vector<string>& board, int row, int col) {
+        int rowCopy = row - 1, colCopy = col - 1;
+        // left
+        while (colCopy >= 0) {
+            if (board[row][colCopy] == 'Q')
+                return false;
+            colCopy--;
+        }
+        // upper diag
+        colCopy = col - 1;
+        while (rowCopy >= 0 && colCopy >= 0) {
+            if (board[rowCopy][colCopy] == 'Q')
+                return false;
+            rowCopy--;
+            colCopy--;
+        }
+        rowCopy = row + 1;
+        colCopy = col - 1;
+        while (rowCopy < board.size() && colCopy >= 0) {
+            if (board[rowCopy][colCopy] == 'Q')
+                return false;
+            rowCopy++;
+            colCopy--;
         }
         return true;
     }
 
     void helperSolveNQueens(vector<vector<string>>& res, vector<string>& board,
-                            int curr, int n) {
-        if (curr == n) {
+                            int col, int n) {
+        if (col == n) {
             res.push_back(board);
             return;
         }
-        for (int i = 0; i < n; i++) {
-            board[curr][i] = 'Q';
-            if (isSafe(board))
-                helperSolveNQueens(res, board, curr + 1, n);
-            board[curr][i] = '.';
+        for (int row = 0; row < n; row++) {
+            board[row][col] = 'Q';
+            if (isSafe(board, row, col))
+                helperSolveNQueens(res, board, col + 1, n);
+            board[row][col] = '.';
         }
     }
 
