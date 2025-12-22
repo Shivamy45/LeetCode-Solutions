@@ -158,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [1078-remove-outermost-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1078-remove-outermost-parentheses) |
 | [1582-design-browser-history](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1582-design-browser-history) |
@@ -211,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0061-rotate-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0061-rotate-list) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0083-remove-duplicates-from-sorted-list) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0138-copy-list-with-random-pointer](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0142-linked-list-cycle-ii) |
@@ -249,17 +251,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0100-same-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0100-same-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0100-same-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0100-same-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0100-same-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0100-same-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Breadth-First Search
 |  |
 | ------- |
