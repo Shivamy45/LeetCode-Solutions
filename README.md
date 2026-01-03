@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0907-koko-eating-bananas](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-koko-eating-bananas) |
+| [0961-n-repeated-element-in-size-2n-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1582-design-browser-history](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1582-design-browser-history) |
@@ -199,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0205-isomorphic-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0961-n-repeated-element-in-size-2n-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 ## Heap (Priority Queue)
