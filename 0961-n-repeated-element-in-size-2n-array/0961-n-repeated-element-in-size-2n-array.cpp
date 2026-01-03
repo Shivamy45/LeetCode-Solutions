@@ -1,9 +1,10 @@
 class Solution {
 public:
-    int repeatedNTimes(vector<int>& arr) {
-        for(int i = 1; i < arr.size(); i++){
-            if((i > 0 && arr[i] == arr[i - 1]) || (i > 1 && arr[i] == arr[i - 2]) || (i > 2 && arr[i] == arr[i - 3])) return arr[i];
+    int repeatedNTimes(vector<int>& nums) {
+        for (int i = 0; i < nums.size() - 2; i++) {
+            if (nums[i] == nums[i + 1] || nums[i] == nums[i + 2])
+                return nums[i];
         }
-        return -1;
+        return nums[nums.size() - 1];
     }
 };
