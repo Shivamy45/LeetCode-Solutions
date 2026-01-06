@@ -30,11 +30,6 @@ public:
             }
             lvlSum.push_back(sum);
         }
-        int maxIdx = 0;
-        for (int i = 1; i < lvlSum.size(); i++) {
-            if (lvlSum[maxIdx] < lvlSum[i])
-                maxIdx = i;
-        }
-        return maxIdx+1;
+        return max_element(lvlSum.begin(), lvlSum.end()) - lvlSum.begin() + 1;
     }
 };
