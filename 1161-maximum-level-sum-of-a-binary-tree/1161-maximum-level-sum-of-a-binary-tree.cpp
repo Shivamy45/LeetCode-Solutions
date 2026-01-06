@@ -13,7 +13,8 @@
 class Solution {
 public:
     int maxLevelSum(TreeNode* root) {
-        vector<long long> lvlSum;
+        long long maxSum = INT_MIN;
+        int maxIdx = 1, idx = 1;
         queue<TreeNode*> q;
         q.push(root);
         while (!q.empty()) {
@@ -28,8 +29,12 @@ public:
                 if (node->right)
                     q.push(node->right);
             }
-            lvlSum.push_back(sum);
+            if (sum > maxSum) {
+                maxSum = sum;
+                maxIdx = idx;
+            }
+            idx++;
         }
-        return max_element(lvlSum.begin(), lvlSum.end()) - lvlSum.begin() + 1;
+        return maxIdx;
     }
 };
