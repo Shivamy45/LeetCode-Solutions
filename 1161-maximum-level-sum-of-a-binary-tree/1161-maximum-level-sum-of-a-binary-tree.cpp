@@ -12,23 +12,29 @@
  */
 class Solution {
 public:
-    void levelSum(TreeNode* root, int lvl,
-                  map<int, long long>& sumOfLvl) {
-        sumOfLvl[lvl] += root->val;
-        if (root->left)
-            levelSum(root->left, lvl + 1, sumOfLvl);
-        if (root->right)
-            levelSum(root->right, lvl + 1, sumOfLvl);
-    }
     int maxLevelSum(TreeNode* root) {
-        map<int, long long> sumOfLvl;
-        levelSum(root, 1, sumOfLvl);
-        int maxLvl = 1;
-        for (auto& it : sumOfLvl) {
-            if (sumOfLvl[maxLvl] < it.second) {
-                maxLvl = it.first;
+        vector<long long> lvlSum;
+        queue<TreeNode*> q;
+        q.push(root);
+        while (!q.empty()) {
+            int n = q.size();
+            int sum = 0;
+            for (int i = 0; i < n; i++) {
+                TreeNode* node = q.front();
+                q.pop();
+                sum += node->val;
+                if (node->left)
+                    q.push(node->left);
+                if (node->right)
+                    q.push(node->right);
             }
+            lvlSum.push_back(sum);
         }
-        return maxLvl;
+        int maxIdx = 0;
+        for (int i = 1; i < lvlSum.size(); i++) {
+            if (lvlSum[maxIdx] < lvlSum[i])
+                maxIdx = i;
+        }
+        return maxIdx+1;
     }
 };
