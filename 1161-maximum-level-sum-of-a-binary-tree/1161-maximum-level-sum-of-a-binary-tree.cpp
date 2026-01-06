@@ -13,7 +13,7 @@
 class Solution {
 public:
     void levelSum(TreeNode* root, int lvl,
-                  unordered_map<int, long long>& sumOfLvl) {
+                  map<int, long long>& sumOfLvl) {
         sumOfLvl[lvl] += root->val;
         if (root->left)
             levelSum(root->left, lvl + 1, sumOfLvl);
@@ -21,11 +21,11 @@ public:
             levelSum(root->right, lvl + 1, sumOfLvl);
     }
     int maxLevelSum(TreeNode* root) {
-        unordered_map<int, long long> sumOfLvl;
+        map<int, long long> sumOfLvl;
         levelSum(root, 1, sumOfLvl);
         int maxLvl = 1;
         for (auto& it : sumOfLvl) {
-            if (sumOfLvl[maxLvl] <= it.second) {
+            if (sumOfLvl[maxLvl] < it.second) {
                 maxLvl = it.first;
             }
         }
