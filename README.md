@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2047-find-a-peak-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2047-find-a-peak-element-ii) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3453-separate-squares-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-separate-squares-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Two Pointers
@@ -344,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0090-subsets-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+| [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 ## Queue
 |  |
