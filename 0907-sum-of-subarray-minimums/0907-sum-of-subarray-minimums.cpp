@@ -22,11 +22,11 @@ public:
         }
         long long totalSum = 0;
         for (int i = 0; i < n; i++) {
-            int left =
+            long long left =
                 ((prevSmallest[i] != -1) ? (i - prevSmallest[i]) : i + 1);
-            int right =
+            long long right =
                 ((nextSmallest[i] != -1) ? (nextSmallest[i] - i) : n - i);
-            totalSum += ((long long)arr[i] * (long long)left * (long long)right) % MOD;
+            totalSum += (arr[i] * left * right) % MOD;
         }
         return totalSum % MOD;
     }
