@@ -3,9 +3,11 @@ public:
     int minPairSum(vector<int>& nums) {
         sort(nums.begin(), nums.end());
         int n = nums.size();
-        int sum = 0;
-        for(int i = 0; i < n / 2; i++){
-            sum = max(sum, nums[i] + nums[n - i - 1]);
+        int sum = 0, i = 0, j = n - 1;
+        while(i < j){
+            sum = max(sum, nums[i] + nums[j]);
+            i++;
+            j--;
         }
         return sum;
     }
