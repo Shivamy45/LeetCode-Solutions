@@ -1,8 +1,6 @@
 class Solution {
 public:
     string removeKdigits(string num, int k) {
-        if (num.length() == k)
-            return "0";
         stack<char> st;
         for (char& c : num) {
             while (k > 0 && !st.empty() && st.top() > c) {
