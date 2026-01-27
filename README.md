@@ -259,6 +259,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -405,4 +406,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0503-next-greater-element-ii) |
 | [0907-sum-of-subarray-minimums](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [2104-sum-of-subarray-ranges](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2104-sum-of-subarray-ranges) |
+## Graph Theory
+|  |
+| ------- |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3650-minimum-cost-path-with-edge-reversals) |
+## Shortest Path
+|  |
+| ------- |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3650-minimum-cost-path-with-edge-reversals) |
 <!---LeetCode Topics End-->
