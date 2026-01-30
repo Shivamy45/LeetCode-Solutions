@@ -30,15 +30,12 @@ public:
 
     int maximalRectangle(vector<vector<char>>& matrix) {
         int n = matrix.size(), m = matrix[0].size();
-        vector<vector<int>> arr(n, vector<int>(m, 0));
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < m; j++)
-                if (matrix[i][j] == '1')
-                    arr[i][j] +=
-                        (i > 0 ? arr[i - 1][j] : 0) + (matrix[i][j] - '0');
+        vector<int> hist(m);
         int res = 0;
         for (int i = 0; i < n; i++) {
-            res = max(res, largestRectangleArea(arr[i]));
+            for (int j = 0; j < m; j++)
+                hist[j] = (matrix[i][j] == '0' ? 0 : hist[j] + 1);
+            res = max(res, largestRectangleArea(hist));
         }
         return res;
     }
