@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2976-minimum-cost-to-convert-string-i) |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3453-separate-squares-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-separate-squares-i) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1200-minimum-absolute-difference](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1200-minimum-absolute-difference) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2154-keep-multiplying-found-values-by-two) |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 ## Binary Search
 |  |
 | ------- |
@@ -456,4 +458,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0701-insert-into-a-binary-search-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0701-insert-into-a-binary-search-tree) |
+## Enumeration
+|  |
+| ------- |
+| [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 <!---LeetCode Topics End-->
