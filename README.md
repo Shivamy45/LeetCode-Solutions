@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0216-combination-sum-iii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0216-combination-sum-iii) |
+| [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 | [0485-max-consecutive-ones](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0485-max-consecutive-ones) |
@@ -277,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
@@ -396,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -434,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0232-implement-queue-using-stacks) |
+| [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
 ## Geometry
 |  |
 | ------- |
@@ -467,4 +471,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
