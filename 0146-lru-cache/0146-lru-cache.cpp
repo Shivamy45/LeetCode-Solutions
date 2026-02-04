@@ -49,9 +49,11 @@ public:
         }
         if (curr == size) {
             mpp.erase(head->next->key);
-            head->next->next->prev = head;
-            head->next = head->next->next;
+            Node* first = head->next;
+            head->next = first->next;
+            first->next->prev = head;
             curr--;
+            delete first;
         }
         Node* newNode = new Node(key, value);
         tail->prev->next = newNode;
