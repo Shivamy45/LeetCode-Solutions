@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3637-trionic-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3637-trionic-array-i) |
+| [3640-trionic-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
 ## Two Pointers
 |  |
@@ -157,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0907-sum-of-subarray-minimums](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-sum-of-subarray-minimums) |
+| [3640-trionic-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
 ## Greedy
 |  |
