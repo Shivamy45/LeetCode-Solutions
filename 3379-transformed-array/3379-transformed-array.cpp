@@ -7,7 +7,10 @@ public:
             if (nums[i] >= 0) {
                 res[i] = nums[(i + nums[i]) % n];
             } else {
-                res[i] = nums[(i + n - (abs(nums[i]) % n)) % n];
+                int j = (i + nums[i]) % n;
+                if (j < 0)
+                    j += n;
+                res[i] = nums[j];
             }
         }
         return res;
