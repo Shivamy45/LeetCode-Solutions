@@ -5,7 +5,8 @@ public:
         vector<int> res(n);
         for (int i = 0; i < n; i++) {
             if (nums[i] >= 0) {
-                res[i] = nums[(i + nums[i]) % n];
+                int j = (i + nums[i]) % n;
+                res[i] = nums[j];
             } else {
                 int j = (i + nums[i]) % n;
                 if (j < 0)
