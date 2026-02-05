@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
+| [3379-transformed-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3379-transformed-array) |
 | [3453-separate-squares-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-separate-squares-i) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
@@ -352,6 +353,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0735-asteroid-collision) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2154-keep-multiplying-found-values-by-two) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
+| [3379-transformed-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3379-transformed-array) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
