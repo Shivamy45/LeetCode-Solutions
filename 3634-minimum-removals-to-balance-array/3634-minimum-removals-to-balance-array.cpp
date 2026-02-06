@@ -5,7 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         int i = 0, res = 0;
         for(int j = 0; j < n; j++){
-            while(i < j && 1LL * nums[i] * k < nums[j]){
+            while(1LL * nums[i] * k < nums[j]){
                 i++;
             }
             res = max(res, j - i + 1);
