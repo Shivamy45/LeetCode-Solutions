@@ -1,99 +1,94 @@
-struct LFUnode {
-    int val, cnt, key;
-    LFUnode* prev;
-    LFUnode* next;
-    LFUnode(int k, int v) {
-        key = k;
-        val = v;
-        cnt = 1;
-        prev = nullptr;
-        next = nullptr;
-    }
+struct Node {
+    int key, val, freq;
+    Node *prev, *next;
+    Node(int k, int v)
+        : key(k), val(v), freq(1), prev(nullptr), next(nullptr) {}
 };
 
 struct DLL {
-    LFUnode* head;
-    LFUnode* tail;
+    Node *head, *tail;
     DLL() {
-        head = new LFUnode(-1, -1);
-        tail = new LFUnode(-1, -1);
+        head = new Node(-1, -1);
+        tail = new Node(-1, -1);
         head->next = tail;
         tail->prev = head;
+    }
+
+    void addBack(Node* node) {
+        node->next = tail;
+        node->prev = tail->prev;
+        tail->prev->next = node;
+        tail->prev = node;
+    }
+
+    void remove(Node* node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+    }
+
+    bool empty() { return head->next == tail; }
+
+    Node* popFront() {
+        Node* node = head->next;
+        remove(node);
+        return node;
     }
 };
 
 class LFUCache {
 public:
-    int size, currSize = 0, minFreq = 1;
-    unordered_map<int, LFUnode*> keyNode;
-    unordered_map<int, DLL*> freqNode;
-    LFUCache(int capacity) { size = capacity; }
+    int capacity, used = 0, minFreq = 0;
+    unordered_map<int, Node*> nodes;
+    unordered_map<int, DLL*> freqList;
+
+    LFUCache(int cap) : capacity(cap) {}
+
+    DLL* getList(int f) {
+        if (!freqList.count(f))
+            freqList[f] = new DLL();
+        return freqList[f];
+    }
+
+    void touch(Node* node) {
+        int f = node->freq;
+        freqList[f]->remove(node);
+        if (f == minFreq && freqList[f]->empty())
+            minFreq++;
+
+        node->freq++;
+        getList(node->freq)->addBack(node);
+    }
 
     int get(int key) {
-        int val = -1;
-        if (keyNode.find(key) != keyNode.end()) {
-            // detach
-            LFUnode* node = keyNode[key];
-            node->prev->next = node->next;
-            node->next->prev = node->prev;
-            // update freq
-            if (minFreq == node->cnt &&
-                freqNode[node->cnt]->head->next == freqNode[node->cnt]->tail)
-                minFreq = node->cnt + 1;
-            // increase cnt
-            node->cnt++;
-            if (!freqNode.count(node->cnt))
-                freqNode[node->cnt] = new DLL();
-            LFUnode* tail = freqNode[node->cnt]->tail;
-            node->prev = tail->prev;
-            tail->prev->next = node;
-            node->next = tail;
-            tail->prev = node;
-            val = node->val;
-        }
-        return val;
+        if (!nodes.count(key))
+            return -1;
+        Node* node = nodes[key];
+        touch(node);
+        return node->val;
     }
 
     void put(int key, int value) {
-        LFUnode* node = nullptr;
-        if (keyNode.find(key) != keyNode.end()) {
-            node = keyNode[key];
-            node->val = value;
-            // detach
-            node->prev->next = node->next;
-            node->next->prev = node->prev;
-            if (minFreq == node->cnt &&
-                freqNode[node->cnt]->head->next == freqNode[node->cnt]->tail) {
-                freqNode.erase(node->cnt);
-                minFreq = node->cnt + 1;
-            }
-            // increase cnt
-            node->cnt++;
-        } else {
-            // create new
-            node = new LFUnode(key, value);
+        if (capacity == 0)
+            return;
 
-            // deletes lfu + lru
-            if (currSize == size) {
-                LFUnode* head = freqNode[minFreq]->head;
-                LFUnode* old = head->next;
-                old->next->prev = head;
-                head->next = old->next;
-                keyNode.erase(old->key);
-                delete old;
-                currSize--;
-            }
-            currSize++;
-            minFreq = 1;
+        if (nodes.count(key)) {
+            Node* node = nodes[key];
+            node->val = value;
+            touch(node);
+            return;
         }
-        if (!freqNode.count(node->cnt))
-            freqNode[node->cnt] = new DLL();
-        LFUnode* tail = freqNode[node->cnt]->tail;
-        node->prev = tail->prev;
-        node->next = tail;
-        tail->prev->next = node;
-        tail->prev = node;
-        // key -> node
-        keyNode[key] = node;
+
+        if (used == capacity) {
+            Node* victim = freqList[minFreq]->popFront();
+            nodes.erase(victim->key);
+            delete victim;
+            used--;
+        }
+
+        Node* node = new Node(key, value);
+        nodes[key] = node;
+        minFreq = 1;
+        getList(1)->addBack(node);
+        used++;
     }
 };
