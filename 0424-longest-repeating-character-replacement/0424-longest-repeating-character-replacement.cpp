@@ -8,14 +8,12 @@ public:
             freq[s[j] - 'A']++;
             maxf = max(maxf, freq[s[j] - 'A']);
             int changes = j - i + 1 - maxf;
-            while (changes > k) {
+            if (changes > k) {
                 freq[s[i++] - 'A']--;
-                // maxf = 0;
-                // for (int k = 0; k < 26; k++)
-                //     maxf = max(maxf, freq[k]);
                 changes = j - i + 1 - maxf;
             }
-            res = max(res, j - i + 1);
+            if (changes <= k)
+                res = max(res, j - i + 1);
             j++;
         }
         return res;
