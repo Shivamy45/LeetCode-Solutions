@@ -10,9 +10,9 @@ public:
             int changes = j - i + 1 - maxf;
             while (changes > k) {
                 freq[s[i++] - 'A']--;
-                maxf = 0;
-                for (int k = 0; k < 26; k++)
-                    maxf = max(maxf, freq[k]);
+                // maxf = 0;
+                // for (int k = 0; k < 26; k++)
+                //     maxf = max(maxf, freq[k]);
                 changes = j - i + 1 - maxf;
             }
             res = max(res, j - i + 1);
