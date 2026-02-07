@@ -210,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0282-expression-add-operators](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0282-expression-add-operators) |
 | [0402-remove-k-digits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0402-remove-k-digits) |
+| [0424-longest-repeating-character-replacement](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [1078-remove-outermost-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1078-remove-outermost-parentheses) |
@@ -281,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0205-isomorphic-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0242-valid-anagram) |
+| [0424-longest-repeating-character-replacement](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0460-lfu-cache](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0460-lfu-cache) |
 | [0496-next-greater-element-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
@@ -422,6 +424,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0239-sliding-window-maximum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0239-sliding-window-maximum) |
+| [0424-longest-repeating-character-replacement](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0904-fruit-into-baskets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [3634-minimum-removals-to-balance-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3634-minimum-removals-to-balance-array) |
 ## Doubly-Linked List
