@@ -3,24 +3,18 @@ public:
     int helper(vector<int>& arr, int k) {
         if (k < 0)
             return 0;
-        int cnt = 0, n = arr.size();
-        int i = 0, sum = 0, j = 0;
-        while (j < n) {
+        int n = arr.size();
+        int i = 0, sum = 0, cnt = 0;
+        for (int j = 0; j < n; j++) {
             sum += arr[j];
-            while (sum > k) {
-                sum -= arr[i];
-                i++;
-            }
+            while (sum > k)
+                sum -= arr[i++];
 
-            if (sum <= k)
-                cnt += (j - i + 1);
-            j++;
+            cnt += (j - i + 1);
         }
         return cnt;
     }
     int numSubarraysWithSum(vector<int>& nums, int goal) {
-        int lessOrEqual = helper(nums, goal);
-        int less = helper(nums, goal - 1);
-        return lessOrEqual - less;
+        return helper(nums, goal) - helper(nums, goal - 1);
     }
 };
