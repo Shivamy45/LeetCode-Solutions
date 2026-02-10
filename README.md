@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1200-minimum-absolute-difference](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1200-minimum-absolute-difference) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1266-minimum-time-visiting-all-points](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1266-minimum-time-visiting-all-points) |
 | [1390-four-divisors](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1390-four-divisors) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 | [0930-binary-subarrays-with-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Matrix
@@ -267,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0171-excel-sheet-column-number](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0171-excel-sheet-column-number) |
 | [0231-power-of-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0282-expression-add-operators](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0282-expression-add-operators) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1266-minimum-time-visiting-all-points](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1266-minimum-time-visiting-all-points) |
 | [1390-four-divisors](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1390-four-divisors) |
 | [2032-largest-odd-number-in-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2032-largest-odd-number-in-string) |
@@ -298,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0904-fruit-into-baskets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2154-keep-multiplying-found-values-by-two) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
@@ -443,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0904-fruit-into-baskets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [3634-minimum-removals-to-balance-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3634-minimum-removals-to-balance-array) |
 ## Doubly-Linked List
 |  |
