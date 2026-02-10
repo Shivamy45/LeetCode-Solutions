@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3637-trionic-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3637-trionic-array-i) |
 | [3640-trionic-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
+| [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Two Pointers
 |  |
 | ------- |
@@ -131,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
 | [1382-balance-a-binary-search-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
+| [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
+| [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Merge Sort
 |  |
 | ------- |
@@ -180,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
+| [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Matrix
 |  |
 | ------- |
@@ -296,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
+| [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
