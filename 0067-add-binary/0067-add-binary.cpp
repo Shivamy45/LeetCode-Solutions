@@ -1,9 +1,8 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        int n = a.length(), m = b.length();
-        int i = n - 1, j = m - 1, c = 0;
-        string res = "";
+        int i = a.length() - 1, j = b.length() - 1, c = 0;
+        string res;
         while (i >= 0 || j >= 0 || c != 0) {
             if (i >= 0)
                 c += a[i] - '0';
