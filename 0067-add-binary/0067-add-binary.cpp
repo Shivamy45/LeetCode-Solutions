@@ -7,7 +7,7 @@ public:
         while(i >= 0 || j >= 0 || c != 0){
             int an = (i >= 0) ? a[i] - '0' : 0;
             int bn = (j >= 0) ? b[j] - '0' : 0;
-            res += to_string((an + bn + c) % 2);
+            res = to_string((an + bn + c) % 2) + res;
             if(an + bn + c >= 2){
                 c = 1;
             } else {
@@ -15,7 +15,6 @@ public:
             }
             i--; j--;
         }
-        reverse(res.begin(), res.end());
         return res;
     }
 };
