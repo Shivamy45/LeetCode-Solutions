@@ -502,6 +502,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0090-subsets-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 | [0231-power-of-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0231-power-of-two) |
+| [0693-binary-number-with-alternating-bits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0693-binary-number-with-alternating-bits) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3315-construct-the-minimum-bitwise-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
