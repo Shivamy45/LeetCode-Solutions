@@ -8,19 +8,20 @@ public:
         priority_queue<int, vector<int>, greater<int>> pq;
         for (int h : hand) {
             freq[h]++;
-            pq.push(h);
         }
+        for (auto it : freq)
+            pq.push(it.first);
         while (!pq.empty()) {
             int x = pq.top();
-            pq.pop();
-            if (freq.count(x) == 0)
-                continue;
             for (int i = 0; i < k; i++) {
                 if (freq.count(x + i) == 0)
                     return false;
                 freq[x + i]--;
-                if (freq[x + i] == 0)
-                    freq.erase(x + i);
+                if (freq[x + i] == 0) {
+                    if ((x + i) != pq.top())
+                        return false;
+                    pq.pop();
+                }
             }
         }
         return true;
