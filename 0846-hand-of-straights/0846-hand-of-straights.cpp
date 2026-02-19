@@ -1,21 +1,26 @@
 class Solution {
 public:
-    bool isNStraightHand(vector<int>& arr, int k) {
-        int n = arr.size();
+    bool isNStraightHand(vector<int>& hand, int k) {
+        int n = hand.size();
         if (n % k != 0)
             return false;
-        map<int, int> mpp;
-        for (int &x : arr)
-            mpp[x]++;
-        while (!mpp.empty()) {
-            int x = mpp.begin()->first;
+        unordered_map<int, int> freq;
+        priority_queue<int, vector<int>, greater<int>> pq;
+        for (int h : hand) {
+            freq[h]++;
+            pq.push(h);
+        }
+        while (!pq.empty()) {
+            int x = pq.top();
+            pq.pop();
+            if (freq.count(x) == 0)
+                continue;
             for (int i = 0; i < k; i++) {
-                int cur = x + i;
-                if (!mpp.count(cur))
+                if (freq.count(x + i) == 0)
                     return false;
-                mpp[cur]--;
-                if (mpp[cur] == 0)
-                    mpp.erase(cur);
+                freq[x + i]--;
+                if (freq[x + i] == 0)
+                    freq.erase(x + i);
             }
         }
         return true;
