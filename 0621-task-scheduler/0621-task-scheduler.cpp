@@ -1,37 +1,20 @@
 class Solution {
 public:
     int leastInterval(vector<char>& tasks, int n) {
-        unordered_map<char, int> mpp;
+        vector<int> freq(26, 0);
         for (char c : tasks)
-            mpp[c]++;
+            freq[c - 'A']++;
 
-        priority_queue<int> pq;
-        for (auto& it : mpp)
-            pq.push(it.second);
-
-        int time = 0;
-
-        while (!pq.empty()) {
-            vector<int> temp;
-            int slots = n + 1;
-
-            while (slots-- && !pq.empty()) {
-                int x = pq.top();
-                pq.pop();
-                if (--x > 0)
-                    temp.push_back(x);
-                time++;
+        int fmax = 0, k = 0;
+        for (int f : freq) {
+            if (f > fmax) {
+                fmax = f;
+                k = 1;
+            } else if (f == fmax && f > 0) {
+                k++;
             }
-
-            for (int x : temp)
-                pq.push(x);
-
-            if (pq.empty())
-                break;
-
-            time += slots + 1;
         }
 
-        return time;
+        return max((int)tasks.size(), (fmax - 1) * (n + 1) + k);
     }
 };
