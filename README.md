@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0151-reverse-words-in-a-string) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0234-palindrome-linked-list) |
+| [0696-count-binary-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0696-count-binary-substrings) |
 | [0908-middle-of-the-linked-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0908-middle-of-the-linked-list) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 ## Sorting
@@ -241,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0451-sort-characters-by-frequency) |
+| [0696-count-binary-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0696-count-binary-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [1078-remove-outermost-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1078-remove-outermost-parentheses) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
