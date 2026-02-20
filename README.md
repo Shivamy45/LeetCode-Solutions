@@ -144,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0148-sort-list) |
+| [0190-reverse-bits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
@@ -521,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0067-add-binary](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0090-subsets-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+| [0190-reverse-bits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0190-reverse-bits) |
 | [0231-power-of-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0231-power-of-two) |
 | [0693-binary-number-with-alternating-bits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0693-binary-number-with-alternating-bits) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3314-construct-the-minimum-bitwise-array-i) |
