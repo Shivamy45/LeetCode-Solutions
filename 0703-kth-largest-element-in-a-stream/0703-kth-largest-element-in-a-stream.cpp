@@ -1,24 +1,22 @@
 class KthLargest {
 private:
     priority_queue<int, vector<int>, greater<int>> pq;
-    int klargest;
+    int k;
 
 public:
     KthLargest(int k, vector<int>& nums) {
-        klargest = k;
-        for (int score : nums) {
-            if (pq.size() == k && pq.top() <= score)
+        this->k = k;
+        for (int x : nums) {
+            pq.push(x);
+            if (pq.size() > k)
                 pq.pop();
-            if (pq.size() < k)
-                pq.push(score);
         }
     }
 
     int add(int val) {
-        if (pq.size() == klargest && pq.top() <= val)
+        pq.push(val);
+        if (pq.size() > k)
             pq.pop();
-        if (pq.size() < klargest)
-            pq.push(val);
         return pq.top();
     }
 };
