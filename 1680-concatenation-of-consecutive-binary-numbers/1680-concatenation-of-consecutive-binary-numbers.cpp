@@ -1,13 +1,11 @@
 class Solution {
 public:
-    int concatenatedBinary(int n) {
-        const int MOD = 1e9 + 7;
-        long long res = 0;
-        for(int i = 1; i <= n; i++){
-            int noOfBits = log2(i) + 1;
-            res = (res << noOfBits);
-            res = res | i;
-            res %= MOD;
+    static int concatenatedBinary(int n) {
+        constexpr int MOD = 1e9 + 7;
+        uint64_t res = 0;
+        for(unsigned i = 1; i <= n; i++){
+            const int noOfBits = 32 - countl_zero(i);
+            res = ((res << noOfBits) | i) % MOD;
         }
         return res;
     }
