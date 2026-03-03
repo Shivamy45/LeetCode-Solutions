@@ -6,6 +6,6 @@ public:
         int mid = (len / 2) + 1;
         if(k == mid) return '1';
         else if(k < mid) return findKthBit(n - 1, k);
-        return (findKthBit(n - 1, len / 2 - (k - mid) + 1) == '0') ? '1' : '0';
+        return (findKthBit(n - 1, 2 * mid  - k) == '0') ? '1' : '0';
     }
 };
