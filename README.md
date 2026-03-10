@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1582-design-browser-history](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1582-design-browser-history) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1646-kth-missing-positive-number) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2047-find-a-peak-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2047-find-a-peak-element-ii) |
 | [2104-sum-of-subarray-ranges](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2104-sum-of-subarray-ranges) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1200-minimum-absolute-difference](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1200-minimum-absolute-difference) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2154-keep-multiplying-found-values-by-two) |
 | [2164-sort-even-and-odd-indices-independently](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2164-sort-even-and-odd-indices-independently) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1646-kth-missing-positive-number) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [2047-find-a-peak-element-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2047-find-a-peak-element-ii) |
 | [3453-separate-squares-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-separate-squares-i) |
 ## Divide and Conquer
@@ -217,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1382-balance-a-binary-search-tree](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2032-largest-odd-number-in-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2032-largest-odd-number-in-string) |
 ## Prefix Sum
@@ -226,6 +230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
 | [0930-binary-subarrays-with-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3719-longest-balanced-subarray-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Matrix
@@ -544,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0992-subarrays-with-k-different-integers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0992-subarrays-with-k-different-integers) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [3634-minimum-removals-to-balance-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3634-minimum-removals-to-balance-array) |
 ## Doubly-Linked List
