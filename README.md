@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0416-partition-equal-subset-sum) |
 | [0455-assign-cookies](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0493-reverse-pairs) |
@@ -205,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0198-house-robber) |
 | [0410-split-array-largest-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0410-split-array-largest-sum) |
+| [0416-partition-equal-subset-sum](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0416-partition-equal-subset-sum) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0907-sum-of-subarray-minimums](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
