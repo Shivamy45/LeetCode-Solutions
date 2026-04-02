@@ -7,21 +7,24 @@ public:
             totalSum += a;
         if (totalSum % 2 != 0)
             return false;
-        vector<vector<int>> dp(n, vector<int>(totalSum / 2 + 1, false));
-        for (int i = 0; i < n; i++)
-            dp[i][0] = true;
-        if (nums[0] <= totalSum / 2)
-            dp[0][nums[0]] = true;
+        int k = totalSum / 2;
+        vector<bool> dp(k + 1, false);
+        dp[0] = true;
+        if (nums[0] <= k)
+            dp[nums[0]] = true;
         for (int i = 1; i < n; i++) {
-            for (int target = 1; target <= totalSum / 2; target++) {
-                bool notTake = dp[i - 1][target];
+            vector<bool> temp(k + 1, false);
+            temp[0] = true;
+            for (int target = 1; target <= k; target++) {
+                bool notTake = dp[target];
                 bool take = false;
                 if (nums[i] <= target) {
-                    take = dp[i - 1][target - nums[i]];
+                    take = dp[target - nums[i]];
                 }
-                dp[i][target] = notTake || take;
+                temp[target] = notTake || take;
             }
+            dp = temp;
         }
-        return dp[n - 1][totalSum / 2];
+        return dp[k];
     }
 };
