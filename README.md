@@ -298,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2032-largest-odd-number-in-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2032-largest-odd-number-in-string) |
+| [2075-decode-the-slanted-ciphertext](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2075-decode-the-slanted-ciphertext) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
@@ -488,6 +489,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
+| [2075-decode-the-slanted-ciphertext](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2075-decode-the-slanted-ciphertext) |
 | [2154-keep-multiplying-found-values-by-two](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2154-keep-multiplying-found-values-by-two) |
 | [2169-simple-bank-system](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2169-simple-bank-system) |
 | [3379-transformed-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3379-transformed-array) |
