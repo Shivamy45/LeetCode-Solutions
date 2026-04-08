@@ -19,15 +19,10 @@ public:
         int right = maxDepth(root->right);
         return 1 + max(left, right);
     }
-
-    int helperDiameterOfBinaryTree(TreeNode* root) {
-        if (!root)
-            return 0;
-        int edgeL = maxDepth(root->left), edgeR = maxDepth(root->right);
-        return max(edgeL + edgeR, max(helperDiameterOfBinaryTree(root->left),
-                                      helperDiameterOfBinaryTree(root->right)));
-    }
     int diameterOfBinaryTree(TreeNode* root) {
-        return helperDiameterOfBinaryTree(root);
+        if(!root) return 0;
+        int maxL = maxDepth(root->left), maxR = maxDepth(root->right);
+        return max(maxL + maxR, max(diameterOfBinaryTree(root->left),
+                                    diameterOfBinaryTree(root->right)));
     }
 };
