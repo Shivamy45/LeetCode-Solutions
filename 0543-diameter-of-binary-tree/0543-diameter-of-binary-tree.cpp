@@ -12,19 +12,19 @@
  */
 class Solution {
 public:
-    int diameter = 0;
-    int helperDiameterOfBinaryTree(TreeNode* root) {
+    int helperDiameterOfBinaryTree(TreeNode* root, int& diameter) {
         if (root == nullptr)
             return 0;
-        int left = helperDiameterOfBinaryTree(root->left);
-        int right = helperDiameterOfBinaryTree(root->right);
+        int left = helperDiameterOfBinaryTree(root->left, diameter);
+        int right = helperDiameterOfBinaryTree(root->right, diameter);
         diameter = max(diameter, left + right);
         return 1 + max(left, right);
     }
     int diameterOfBinaryTree(TreeNode* root) {
         if (!root)
             return 0;
-        helperDiameterOfBinaryTree(root);
+        int diameter = 0;
+        helperDiameterOfBinaryTree(root, diameter);
         return diameter;
     }
 };
