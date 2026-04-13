@@ -15,19 +15,15 @@ public:
     int helperMaxPathSum(TreeNode* root, int& maxSum) {
         if (!root)
             return 0;
-        int left = helperMaxPathSum(root->left, maxSum);
-        int right = helperMaxPathSum(root->right, maxSum);
-        int maxNow = root->val + max({left, right, left + right, 0});
+        int left = max(0, helperMaxPathSum(root->left, maxSum));
+        int right = max(0, helperMaxPathSum(root->right, maxSum));
+        int maxNow = root->val + left + right;
         maxSum = max(maxSum, maxNow);
-        return root->val + max({left, right, 0});;
+        return root->val + max(left, right);
     }
     int maxPathSum(TreeNode* root) {
-        if (!root)
-            return 0;
         int maxSum = INT_MIN;
-        int left = helperMaxPathSum(root->left, maxSum);
-        int right = helperMaxPathSum(root->right, maxSum);
-        maxSum = max(maxSum, root->val + max({left, right, left + right, 0}));
+        helperMaxPathSum(root, maxSum);
         return maxSum;
     }
 };
