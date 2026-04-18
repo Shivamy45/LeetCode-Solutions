@@ -9,39 +9,19 @@
  */
 class Solution {
 public:
-    bool helperHelperLowestCommonAncestor(TreeNode* root, TreeNode* x,
-                                          vector<TreeNode*>& res) {
-        if (!root)
-            return false;
-        res.push_back(root);
-        if (root->val == x->val)
-            return true;
-        if (helperHelperLowestCommonAncestor(root->left, x, res) ||
-            helperHelperLowestCommonAncestor(root->right, x, res))
-            return true;
-        res.pop_back();
-        return false;
-    }
-
-    vector<TreeNode*> helperLowestCommonAncestor(TreeNode* root,
-                                                 TreeNode* val) {
-        vector<TreeNode*> res;
-        helperHelperLowestCommonAncestor(root, val, res);
-        return res;
-    }
-
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        vector<TreeNode*> pPath = helperLowestCommonAncestor(root, p);
-        unordered_map<TreeNode*, int> mpp;
-        for (auto it : pPath) {
-            mpp[it] = 1;
-        }
-        vector<TreeNode*> qPath = helperLowestCommonAncestor(root, q);
-        TreeNode* res = nullptr;
-        for (auto it : qPath) {
-            if (mpp.find(it) != mpp.end())
-                res = it;
-        }
-        return res;
+        if (!root)
+            return nullptr;
+        if (root == p || root == q)
+            return root;
+        TreeNode* left = lowestCommonAncestor(root->left, p, q);
+        TreeNode* right = lowestCommonAncestor(root->right, p, q);
+        if (left == nullptr && right == nullptr)
+            return nullptr;
+        else if (left == nullptr)
+            return right;
+        else if (right == nullptr)
+            return left;
+        return root;
     }
 };
