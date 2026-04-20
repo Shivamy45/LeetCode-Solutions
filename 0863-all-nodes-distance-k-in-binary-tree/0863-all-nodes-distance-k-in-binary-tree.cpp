@@ -9,8 +9,8 @@
  */
 class Solution {
 public:
-    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
-        unordered_map<TreeNode*, TreeNode*> mpp;
+    void helperDistanceK(unordered_map<TreeNode*, TreeNode*>& mpp,
+                         TreeNode* root) {
         queue<TreeNode*> q;
         q.push(root);
         while (!q.empty()) {
@@ -25,26 +25,53 @@ public:
                 q.push(node->right);
             }
         }
-        vector<int> res;
-        unordered_set<int> vis;
+    }
+
+    vector<int>
+    helperDistanceK2(TreeNode* target, int k,
+                     unordered_map<TreeNode*, TreeNode*>& parentMap) {
+        unordered_set<TreeNode*> vis;
+        queue<TreeNode*> q;
         TreeNode* curr = target;
-        queue<pair<TreeNode*, int>> qt;
-        qt.push({curr, 0});
-        while (!qt.empty()) {
-            auto [node, step] = qt.front();
-            qt.pop();
-            if (vis.find(node->val) != vis.end())
-                continue;
-            vis.insert(node->val);
-            if (step == k)
-                res.push_back(node->val);
-            if (node->left)
-                qt.push({node->left, step + 1});
-            if (node->right)
-                qt.push({node->right, step + 1});
-            if (mpp.count(node))
-                qt.push({mpp[node], step + 1});
+        vis.insert(curr);
+        q.push(curr);
+        int lvl = 0;
+        while (!q.empty()) {
+            int size = q.size();
+            if (lvl++ == k)
+                break;
+            for (int i = 0; i < size; i++) {
+                curr = q.front();
+                q.pop();
+                if (curr->left && vis.find(curr->left) == vis.end()) {
+                    vis.insert(curr->left);
+                    q.push(curr->left);
+                }
+                if (curr->right && vis.find(curr->right) == vis.end()) {
+                    vis.insert(curr->right);
+                    q.push(curr->right);
+                }
+                if (parentMap.count(curr) &&
+                    vis.find(parentMap[curr]) == vis.end()) {
+                    vis.insert(parentMap[curr]);
+                    q.push(parentMap[curr]);
+                }
+            }
         }
+        vector<int> res;
+        while (!q.empty()) {
+            res.push_back(q.front()->val);
+            q.pop();
+        }
+
         return res;
+    }
+
+    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
+        unordered_map<TreeNode*, TreeNode*> parentMap;
+        // update parent map
+        helperDistanceK(parentMap, root);
+
+        return helperDistanceK2(target, k, parentMap);
     }
 };
