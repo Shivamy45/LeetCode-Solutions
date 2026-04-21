@@ -12,33 +12,21 @@
  */
 class Solution {
 public:
+    int helperCountNode(TreeNode* root, bool left) {
+        int h = 0;
+        while (root) {
+            h++;
+            root = (left) ? root->left : root->right;
+        }
+        return h;
+    }
     int countNodes(TreeNode* root) {
         if (!root)
             return 0;
-        queue<TreeNode*> q;
-        q.push(root);
-        int ans = 1;
-        while (!q.empty()) {
-            bool stop = false;
-            int size = q.size();
-            for (int i = 0; i < size; i++) {
-                TreeNode* node = q.front();
-                q.pop();
-                if (node->left){
-                    ans++;
-                    q.push(node->left);
-                }
-                if (node->right){
-                    ans++;
-                    q.push(node->right);
-                }
-                if (!node->left || !node->right){
-                    stop = true;
-                    break;
-                }
-            }
-            if(stop) break;
-        }
-        return ans;
+        int leftH = helperCountNode(root, true);
+        int rightH = helperCountNode(root, false);
+        if (leftH == rightH)
+            return (1 << leftH) - 1;
+        return 1 + countNodes(root->left) + countNodes(root->right);
     }
 };
