@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void bfs(vector<vector<int>> mat, vector<bool>& vis, int idx) {
+    void bfs(vector<vector<int>> &mat, vector<bool>& vis, int idx) {
         queue<int> q;
         q.push(idx);
         while (!q.empty()) {
