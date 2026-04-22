@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>> mat, vector<bool>& vis, int idx) {
+    void dfs(vector<vector<int>> &mat, vector<bool>& vis, int idx) {
         for (int i = 0; i < mat[idx].size(); i++) {
             if (mat[idx][i] == 1 && !vis[i]) {
                 vis[i] = true;
