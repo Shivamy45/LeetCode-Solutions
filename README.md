@@ -300,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0657-robot-return-to-origin](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0657-robot-return-to-origin) |
 | [0696-count-binary-substrings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0696-count-binary-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+| [0796-rotate-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0796-rotate-string) |
 | [1078-remove-outermost-parentheses](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1078-remove-outermost-parentheses) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one) |
@@ -753,6 +754,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String Matching
 |  |
 | ------- |
+| [0796-rotate-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/0796-rotate-string) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3474-lexicographically-smallest-generated-string) |
 ## Bitmask
 |  |
