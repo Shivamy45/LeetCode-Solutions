@@ -12,27 +12,25 @@
  */
 class BSTIterator {
 public:
-    TreeNode* head = new TreeNode(-1);
-    TreeNode* temp = head;
+    stack<TreeNode*> antiBST;
     BSTIterator(TreeNode* root) {
-        inorder(root);
-        temp = head;
+        antiInorder(root);
+        antiBST.push(new TreeNode(-1));
     }
-    void inorder(TreeNode* root) {
+    void antiInorder(TreeNode* root) {
         if (!root)
             return;
-        inorder(root->left);
-        temp->right = new TreeNode(root->val);
-        temp = temp->right;
-        inorder(root->right);
+        antiInorder(root->right);
+        antiBST.push(root);
+        antiInorder(root->left);
     }
 
     int next() {
-        temp = temp->right;
-        return temp->val;
+        antiBST.pop();
+        return antiBST.top()->val;
     }
 
-    bool hasNext() { return temp->right != nullptr; }
+    bool hasNext() { return antiBST.size() > 1; }
 };
 
 /**
