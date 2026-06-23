@@ -12,25 +12,23 @@
  */
 class BSTIterator {
 public:
-    stack<TreeNode*> antiBST;
-    BSTIterator(TreeNode* root) {
-        antiInorder(root);
-        antiBST.push(new TreeNode(-1));
+    stack<TreeNode*> st;
+    void insertLeft(TreeNode* root) {
+        while (root) {
+            st.push(root);
+            root = root->left;
+        }
     }
-    void antiInorder(TreeNode* root) {
-        if (!root)
-            return;
-        antiInorder(root->right);
-        antiBST.push(root);
-        antiInorder(root->left);
-    }
-
+    BSTIterator(TreeNode* root) { insertLeft(root); }
     int next() {
-        antiBST.pop();
-        return antiBST.top()->val;
+        TreeNode* node = st.top();
+        st.pop();
+        if (node->right)
+            insertLeft(node->right);
+        return node->val;
     }
 
-    bool hasNext() { return antiBST.size() > 1; }
+    bool hasNext() { return !st.empty(); }
 };
 
 /**
