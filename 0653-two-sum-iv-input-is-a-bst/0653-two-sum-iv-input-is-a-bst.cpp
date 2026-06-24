@@ -12,12 +12,24 @@
  */
 class Solution {
 public:
-    unordered_map<int, int> mpp;
-    bool findTarget(TreeNode* root, int k) {
-        if(!root) return false;
-        if (mpp.count(k - root->val) == 1)
+    bool search(TreeNode* root, TreeNode* curr, int key) {
+        if (!root)
+            return false;
+        if (root->val == key && root != curr)
             return true;
-        mpp[root->val] = 1;
-        return findTarget(root->left, k) || findTarget(root->right, k);
+        else if (root->val < key)
+            return search(root->right, curr, key);
+        else if (root->val > key)
+            return search(root->left, curr, key);
+        return false;
     }
+    bool traverse(TreeNode* root, TreeNode* curr, int k) {
+        if (!curr)
+            return false;
+        int key = k - curr->val;
+        if (search(root, curr, key))
+            return true;
+        return traverse(root, curr->left, k) || traverse(root, curr->right, k);
+    }
+    bool findTarget(TreeNode* root, int k) { return traverse(root, root, k); }
 };
