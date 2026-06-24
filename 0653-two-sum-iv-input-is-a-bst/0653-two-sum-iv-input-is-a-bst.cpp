@@ -12,12 +12,12 @@
  */
 class Solution {
 public:
-    unordered_map<int, TreeNode*> mpp;
+    unordered_map<int, int> mpp;
     bool findTarget(TreeNode* root, int k) {
         if(!root) return false;
         if (mpp.count(k - root->val) == 1)
             return true;
-        mpp[root->val] = root;
+        mpp[root->val] = 1;
         return findTarget(root->left, k) || findTarget(root->right, k);
     }
 };
