@@ -16,29 +16,37 @@ class Solution {
         int subtreeSum;
         int mx;
         int mn;
-        Data(int a, int b, int c) : subtreeSum(a), mx(b), mn(c) {};
+        bool isBST;
+        Data() {
+            subtreeSum = 0;
+            mx = INT_MIN;
+            mn = INT_MAX;
+            isBST = true;
+        }
     };
-    int ans = 0;
 
-    Data* validBST(TreeNode* root) {
+    Data* validBST(TreeNode* root, int& ans) {
         // empty node
         if (!root)
-            return new Data(0, INT_MIN, INT_MAX);
-        auto left = validBST(root->left);
-        auto right = validBST(root->right);
-        int subtreeSum = left->subtreeSum + right->subtreeSum + root->val;
-        if (left->mx < root->val && root->val < right->mn) {
-            ans = max(ans, subtreeSum);
-            return new Data(subtreeSum, max(right->mx, root->val),
-                            min(left->mn, root->val));
+            return new Data();
+        auto left = validBST(root->left, ans);
+        auto right = validBST(root->right, ans);
+        Data* temp = new Data();
+        if (left->isBST && right->isBST && left->mx < root->val &&
+            root->val < right->mn) {
+            temp->subtreeSum = left->subtreeSum + right->subtreeSum + root->val;
+            ans = max(ans, temp->subtreeSum);
+            temp->mx = max(root->val, right->mx);
+            temp->mn = min(root->val, left->mn);
+            return temp;
         }
-        return new Data(subtreeSum, INT_MAX, INT_MIN);
+        temp->isBST = false;
+        return temp;
     }
-
 public:
     int maxSumBST(TreeNode* root) {
-        ans = 0;
-        validBST(root);
+        int ans = 0;
+        validBST(root, ans);
         return ans;
     }
 };
