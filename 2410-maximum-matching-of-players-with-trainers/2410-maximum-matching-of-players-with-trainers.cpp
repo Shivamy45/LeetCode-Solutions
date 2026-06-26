@@ -5,12 +5,10 @@ public:
         sort(trainers.begin(), trainers.end());
         int i = 0, j = 0;
         while(i < players.size() && j < trainers.size()){
-            if(players[i] > trainers[j]){
+            if(players[i] <= trainers[j]){
                 j++;
-                continue;
-            }
-            i++;
-            j++;
+                i++;
+            } else j++;
         }
         return i;
     }
