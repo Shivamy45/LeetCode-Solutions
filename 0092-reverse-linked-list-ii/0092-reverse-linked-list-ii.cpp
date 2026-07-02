@@ -11,18 +11,21 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
-        ListNode *dummy = new ListNode(-1, head);
-        ListNode *prevNode = dummy;
-        for(int i = 1; i < left; i++) prevNode = prevNode->next;
-        ListNode *curr = prevNode->next;
+        ListNode* dummy = new ListNode(-1, head);
+        ListNode* prevNode = dummy;
+        // node before left
+        for (int i = 1; i < left; i++)
+            prevNode = prevNode->next;
+        // starting node of reverse part
+        ListNode* curr = prevNode->next;
         ListNode *prev = nullptr, *next = curr->next;
-        for(int i = left; i<= right; i++){
+        for (int i = left; i <= right; i++) {
             // reverse code
             curr->next = prev;
             prev = curr;
             curr = next;
-            if(next)
-            next = next->next;
+            if (next)
+                next = next->next;
         }
         // joining the reverse part
         prevNode->next->next = curr;
