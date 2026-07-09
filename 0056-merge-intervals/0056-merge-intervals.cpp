@@ -2,11 +2,7 @@ class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         vector<vector<int>> res;
-        sort(intervals.begin(), intervals.end(), [](auto& a, auto& b) {
-            if (a[0] == b[0])
-                return a[1] < b[1];
-            return a[0] < b[0];
-        });
+        sort(intervals.begin(), intervals.end());
         for (auto interval : intervals) {
             if (res.empty() || res.back()[1] < interval[0])
                 res.push_back(interval);
