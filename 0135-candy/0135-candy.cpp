@@ -2,21 +2,30 @@ class Solution {
 public:
     int candy(vector<int>& ratings) {
         int n = ratings.size();
-        vector<int> right(n, 1);
-        for (int i = n - 2; i >= 0; i--) {
-            if (ratings[i] > ratings[i + 1])
-                right[i] = right[i + 1] + 1;
-            else
-                right[i] = 1;
+        int total = 1;
+        int i = 1;
+        while (i < n) {
+            if (ratings[i] == ratings[i - 1]) {
+                total++;
+                i++;
+                continue;
+            }
+            int peak = 1;
+            while (i < n && ratings[i] > ratings[i - 1]) {
+                peak++;
+                total += peak;
+                i++;
+            }
+            int down = 1;
+            while (i < n && ratings[i] < ratings[i - 1]) {
+                total += down;
+                down++;
+                i++;
+            }
+            if (down > peak)
+                total += (down - peak);
         }
-        int candy = 0, given = 0;
-        for (int i = 0; i < n; i++) {
-            if (i == 0 || ratings[i] > ratings[i - 1]) {
-                given++;
-            } else
-                given = 1;
-            candy += max(right[i], given);
-        }
-        return candy;
+
+        return total;
     }
 };
