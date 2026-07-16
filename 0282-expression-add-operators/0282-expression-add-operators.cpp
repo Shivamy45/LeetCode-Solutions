@@ -1,52 +1,37 @@
 class Solution {
 public:
-    void dfs(string& num, int target, int start, long long current_value,
-             long long last_operand, string expression,
-             vector<string>& result) {
-        // Base case: If we've reached the end of the string
-        if (start == num.size()) {
-            // If the expression evaluates to the target, add it to result
-            if (current_value == target)
-                result.push_back(expression);
+    void helperAddOperators(string num, int target, int idx, long long curr,
+                            int prevOperand, string temp, vector<string>& res) {
+        if (idx == num.length()) {
+            if (curr == target)
+                res.push_back(temp);
             return;
         }
+        for (int i = idx; i < num.length(); i++) {
+            if (i > idx && num[idx] == '0')
+                break;
+            string valString = num.substr(idx, i - idx + 1);
+            long long val = stoll(valString);
 
-        // Loop through all substrings starting from 'start' index
-        for (int i = start; i < num.size(); i++) {
-            // Skip leading zeros in numbers
-            if (i > start && num[start] == '0')
-                return;
-            // Get the current number
-            string current_num = num.substr(start, i - start + 1);
-            long long current_num_val = stoll(current_num);
-
-            // If we are at the first number, just start the expression
-            if (start == 0) {
-                dfs(num, target, i + 1, current_num_val, current_num_val,
-                    current_num, result);
+            if (idx == 0) {
+                helperAddOperators(num, target, i + 1, val, val, valString,
+                                   res);
             } else {
-                // Add the current number with '+'
-                dfs(num, target, i + 1, current_value + current_num_val,
-                    current_num_val, expression + "+" + current_num, result);
-
-                // Add the current number with '-'
-                dfs(num, target, i + 1, current_value - current_num_val,
-                    -current_num_val, expression + "-" + current_num, result);
-
-                // Add the current number with '*'
-                dfs(num, target, i + 1,
-                    current_value - last_operand +
-                        last_operand * current_num_val,
-                    last_operand * current_num_val,
-                    expression + "*" + current_num, result);
+                helperAddOperators(num, target, i + 1, curr + val, val,
+                                   temp + '+' + valString, res);
+                helperAddOperators(num, target, i + 1, curr - val, -val,
+                                   temp + '-' + valString, res);
+                helperAddOperators(num, target, i + 1,
+                                   curr - prevOperand + (prevOperand * val),
+                                   prevOperand * val, temp + '*' + valString,
+                                   res);
             }
         }
     }
-    // To store the valid expressions
+
     vector<string> addOperators(string num, int target) {
-        vector<string> result;
-        // Start DFS with empty expression
-        dfs(num, target, 0, 0, 0, "", result);
-        return result;
+        vector<string> res;
+        helperAddOperators(num, target, 0, 0, 0, "", res);
+        return res;
     }
 };
