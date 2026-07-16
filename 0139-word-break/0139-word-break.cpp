@@ -16,9 +16,7 @@ public:
     }
 
     bool wordBreak(string s, vector<string>& wordDict) {
-        unordered_set<string> words;
-        for (string a : wordDict)
-            words.insert(a);
+        unordered_set<string> words{begin(wordDict), end(wordDict)};
         vector<int> dp(s.length(), -1);
         return helperWordBreak(s, words, 0, dp);
     }
