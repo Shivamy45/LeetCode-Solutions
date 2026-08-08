@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2410-maximum-matching-of-players-with-trainers) |
+| [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Sorting
 |  |
 | ------- |
@@ -259,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
+| [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3640-trionic-array-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3640-trionic-array-ii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
 ## Greedy
@@ -281,6 +283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2032-largest-odd-number-in-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2032-largest-odd-number-in-string) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2410-maximum-matching-of-players-with-trainers) |
+| [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3474-lexicographically-smallest-generated-string) |
 ## Prefix Sum
 |  |
@@ -357,6 +360,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/2976-minimum-cost-to-convert-string-i) |
+| [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3453-generate-binary-strings-without-adjacent-zeros](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3453-generate-binary-strings-without-adjacent-zeros) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Shivamy45/LeetCode-Solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
