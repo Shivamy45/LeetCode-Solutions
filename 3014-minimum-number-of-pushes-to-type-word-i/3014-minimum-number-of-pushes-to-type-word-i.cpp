@@ -2,13 +2,9 @@ class Solution {
 public:
     int minimumPushes(string word) {
         int n = word.length();
-        int press = 1, ans = 0;
-        while(n >= 8){
-            n -= 8;
-            ans += (press * 8);
-            press++;
-        }
-        ans += press * n;
+        int blocks = n / 8;
+        // press keys in blocks of 8 at increasing presses + rem keys to press
+        int ans = ((blocks * (blocks + 1) * 4) + ((n % 8) * (blocks + 1)));
         return ans;
     }
 };
