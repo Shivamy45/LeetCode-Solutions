@@ -14,8 +14,7 @@ public:
                 ++j;
             }
         }
-        vector<int> ans = arr1;
-        ans.insert(ans.end(), arr2.begin(), arr2.end());
-        return ans;
+        arr1.insert(arr1.end(), arr2.begin(), arr2.end());
+        return arr1;
     }
 };
